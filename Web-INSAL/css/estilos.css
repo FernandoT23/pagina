@@ -1,0 +1,373 @@
+:root{
+    --main-color:#d3ad7f;
+    --black:#13131a;
+    --bg:#010103;
+    --border:.1rem solid rgba(255,255,255,.3);
+}
+*{
+    font-family: 'Roboto', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+        .menuses{
+    list-style: none;
+    padding: 2px;
+    background: black;
+    margin: auto;
+    text-align: left;
+    }
+    
+    .menuses li a{
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+    display: block;
+    font-family: sans-serif;
+    }
+    
+    .menuses li{
+    display: inline-block;
+    font-size: 17px;
+    text-align: right;
+    }
+    
+    .menuses li a:hover{
+    background: #e77a4b;
+
+    }
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+body{
+    background: var(--bg);
+}
+.logo{
+    
+        animation: rotation 3s infinite linear;
+      }
+      
+      @keyframes rotation {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding:.9rem 3rem;
+    font-size: 1.7rem;
+    color:#fff;
+    background: var(--main-color);
+    cursor: pointer;
+}
+.btn:hover{
+    letter-spacing: .2rem;
+}
+.header{
+    background: var(--bg);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:1.5rem 7%;
+    border-bottom: var(--border);
+    position: fixed;
+    top:0; left: 0; right: 0;
+    z-index: 1000;
+}
+.header .logo img{
+    height: 6rem;
+}
+
+.header .navbar a{
+    margin:0 1rem;
+    font-size: 1.6rem;
+    color:#fff;
+}
+
+.header .navbar a:hover{
+    color:var(--main-color);
+    border-bottom: .1rem solid var(--main-color);
+    padding-bottom: .5rem;
+}
+
+.header .icons div{
+    color:#fff;
+    cursor: pointer;
+    font-size: 2.5rem;
+    margin-left: 2rem;
+}
+
+.header .icons div:hover{
+    color:var(--main-color);
+}
+#menuses{
+    list-style: none;
+    padding: 2px;
+    background: black;
+    margin: auto;
+    text-align: left;
+    }
+    
+    #menuses li a{
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+    display: block;
+    font-family: sans-serif;
+    }
+    
+    #menuses li{
+    display: inline-block;
+    font-size: 17px;
+    text-align: right;
+    }
+    
+    #menuses li a:hover{
+    background: #e77a4b;
+    
+    }
+
+    h1{
+        font-size: 40px;
+        margin: -70px;
+        font-family: 'Roboto', sans-serif;
+        text-align: center;
+        line-height: 9.8;
+        color: #d3ad7f;
+        }
+    .contenedor{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100px;
+    }
+    .contenedor figure{
+       position:relative;
+        height: 250px;
+        cursor: pointer;
+        width: 350px;
+        overflow: hidden;
+        border-radius: 6px;
+        box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
+    }
+    .contenedor figure img{
+        width: 100%;
+        height: 100%;
+        transition: all 400ms ease-out;
+        will-change: transform;
+        margin-right: 15px;
+    }
+    .contenedor figure .capa{
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,103,123,0.7);
+        transition: all 400ms ease-out;
+        opacity: 0;
+        visibility: hidden;
+       text-align: center;
+       
+    }
+    .contenedor figure:hover > .capa {
+        opacity: 1;
+        visibility: visible;
+    }
+    .contenedor figure:hover > .capa h3{
+        margin-top: 70px;
+        margin-bottom: 15px;
+    }
+    .contenedor figure:hover > img{
+        transform: scale(1.3);
+    }
+    .contenedor figure .capa h3{
+        color: #fff;
+        font-weight: 400;
+        margin-bottom: 120px;
+        transition: all 400ms ease-out;
+         margin-top: 30px;
+    }
+    .contenedor figure .capa p{
+        color: #fff;
+        font-size: 15px;
+        line-height: 1.5;
+        width: 100%;
+        max-width: 220px;
+        margin: auto;
+    }
+    
+    .caja{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 80vh;
+    }
+    .caja figure{
+       position:relative;
+        height: 250px;
+        cursor: pointer;
+        width: 350px;
+        overflow: hidden;
+        border-radius: 6px;
+        box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
+    }
+    .caja figure img{
+        width: 100%;
+        height: 100%;
+        transition: all 400ms ease-out;
+        will-change: transform;
+    }
+    .caja figure .capa{
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,103,123,0.7);
+        transition: all 400ms ease-out;
+        opacity: 0;
+        visibility: hidden;
+       text-align: center;
+    }
+    .caja figure:hover > .capa {
+        opacity: 1;
+        visibility: visible;
+    }
+    .caja figure:hover > .capa h3{
+        margin-top: 70px;
+        margin-bottom: 15px;
+    }
+    .caja figure:hover > img{
+        transform: scale(1.3);
+    }
+    .caja figure .capa h3{
+        color: #fff;
+        font-weight: 400;
+        margin-bottom: 120px;
+        transition: all 400ms ease-out;
+         margin-top: 30px;
+    }
+    .caja figure .capa p{
+        color: #fff;
+        font-size: 15px;
+        line-height: 1.5;
+        width: 100%;
+        max-width: 220px;
+        margin: auto;
+    }
+
+    .otro{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 15vh;
+    }
+    .otro figure{
+       position:relative;
+        height: 250px;
+        cursor: pointer;
+        width: 350px;
+        overflow: hidden;
+        border-radius: 6px;
+        box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
+    }
+    .otro figure img{
+        width: 100%;
+        height: 100%;
+        transition: all 400ms ease-out;
+        will-change: transform;
+    }
+    .otro figure .capa{
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,103,123,0.7);
+        transition: all 400ms ease-out;
+        opacity: 0;
+        visibility: hidden;
+       text-align: center;
+    }
+    .otro figure:hover > .capa {
+        opacity: 1;
+        visibility: visible;
+    }
+    .otro figure:hover > .capa h3{
+        margin-top: 70px;
+        margin-bottom: 15px;
+    }
+    .otro figure:hover > img{
+        transform: scale(1.3);
+    }
+    .otro figure .capa h3{
+        color: #fff;
+        font-weight: 400;
+        margin-bottom: 120px;
+        transition: all 400ms ease-out;
+         margin-top: 30px;
+    }
+    .otro figure .capa p{
+        color: #fff;
+        font-size: 15px;
+        line-height: 1.5;
+        width: 100%;
+        max-width: 220px;
+        margin: auto;
+    }
+
+    .jiji .box-container{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+        gap:1.5rem;
+        
+    
+    }
+    
+    .jiji .box-container .box{
+        border:var(--border);
+        text-align: center;
+        padding:3rem 2rem;
+        margin: 20px;
+        margin-top: -50px;
+        margin-bottom: -5%;
+       
+    }
+    
+    .jiji .box-container .box p{
+        font-size: 1.5rem;
+        line-height: 1.8;
+        color:#ccc;
+        padding:2rem 0;
+        
+    }
+    
+    
+    
+    .jiji .box-container .box h3{
+        padding:1rem 0;
+        font-size: 2rem;
+        color:#fff;
+        
+    }
+    .jiji .box-container .box span{
+        color: rgba(245, 123, 39, 0.89);
+    }
+
+
+
+    
+    

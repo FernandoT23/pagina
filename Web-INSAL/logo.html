@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logo INSAL</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+    <header class="header">
+
+        <img onmouseenter="AImg(this)" onmouseleave="BImg(this)" border="0" src="images/logo.png" alt="Smiley" width="50" height="50">
+    
+    <script>
+    function AImg(x) {
+      x.style.height = "64px";
+      x.style.width = "64px";
+    }
+    
+    function BImg(x) {
+      x.style.height = "50px";
+      x.style.width = "50px";
+    }
+    </script>
+        <div id="menuses">
+                <li><a href="index.html">Inicio</a></li>
+        </div>
+            <div class="icons">
+                <div class="fas fa-search" id="search-btn"></div>
+                <div class="fas fa-shopping-cart" id="cart-btn"></div>
+                <div class="fas fa-bars" id="menu-btn"></div>
+            </div>
+        </header><br><br><br><br><br><br><br><br><br><br>
+    
+   <center><img onmouseenter="bigImg(this)" onmouseleave="normalImg(this)" border="0" 
+    src="images/logo.png" alt="logo.png" width="300" height="300"></center> 
+
+   <script>
+    function bigImg(x) {
+      x.style.height = "500px";
+      x.style.width = "500px";
+    }
+    
+    function normalImg(x) {
+      x.style.height = "500px";
+      x.style.width = "500px";
+    }
+    </script>
+
+</body>
+</html>

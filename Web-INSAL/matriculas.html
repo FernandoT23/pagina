@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matricula</title>
+    <style>
+        hr{
+            color: beige;
+            width: 100%;
+        }
+        body{
+            background-color: black;
+        }
+
+        #menuses{
+    list-style: none;
+    padding: 2px;
+    background: black;
+    margin: auto;
+    text-align: center;
+    }
+    
+    #menuses li a{
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+    display: block;
+    font-family: sans-serif;
+    }
+    
+    #menuses li{
+    display: inline-block;
+    font-size: 20px;
+    text-align: center;
+    }
+    
+    #menuses li a:hover{
+    background: #e77a4b;
+
+    }
+    h1{
+        text-align: center;
+        font-size: 45px;
+        color: bisque;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .titulo{
+	color: #f7780af7;
+	font-size: 40px;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+    .contenedor-sobre-nosotros{
+	display: flex;
+	justify-content: space-evenly;
+}
+.imagen-about-us{
+        width: 48%;
+}
+
+
+.contenido-textos {
+	width: 48%;
+}
+
+.contenido-textos h3{
+    color: blanchedalmond;
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 6px 1em 0 auto;
+}
+
+.contenido-textos h3 span{
+	background: #f8560b;
+	color: white;
+    font-size: 15px;
+	border-radius: 50%;
+	display: inline-block;
+	text-align: center;
+	width: 20px;
+	height: 18px;
+	padding: 1px;
+	box-shadow: 0 0 6px 0 rgb(253, 145, 2);
+    margin: 6px 10px 0 2em;
+}
+
+.contenido-textos p{
+	font-size: 18.5px;
+	color: rgb(255, 255, 255);
+	padding: 0px 0px 15px 15px;
+	font-weight: 300;
+	text-align: justify;
+    margin-left: 45px;
+}
+@keyframes slide {
+	0% { transform: translateX(0); }
+	10% { transform: translateX(0); }
+
+	15% { transform: translateX(-100%); }
+	30% { transform: translateX(-100%); }
+
+	35% { transform: translateX(-200%); }
+	50% { transform: translateX(-200%); }
+
+	55% { transform: translateX(-300%); }
+	70% { transform: translateX(-300%); }
+
+	75% { transform: translateX(-400%); }
+	90% { transform: translateX(-400%); }
+
+	95% { transform: translateX(-500%); }
+	100% { transform: translateX(-500%); }
+}
+
+.wrapper {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.slider {
+	position: relative;
+}
+
+.slides {
+	position: relative;
+	display: flex;
+	overflow: hidden;
+}
+
+.slide {
+    width: 100vw;
+	flex-shrink: 0;
+	animation-name: slide;
+	animation-duration: 20s;
+	animation-iteration-count: infinite;
+}
+
+.slides:hover .slide {
+	animation-play-state: running;
+}
+
+.slide img {
+    height: 629px;
+	width: 100%;
+	vertical-align: top;
+}
+.slide:target {
+	animation-name: none;
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 50;
+}
+
+.slider-controler {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	text-align: center;
+	padding: 5px;
+	background-color: rgba(0,0,0,0.5);
+	z-index: 100;
+}
+
+.slider-controler li {
+	margin: 0 0.5rem;
+	display: inline-block;
+	vertical-align: top;
+}
+.caption {
+	color: white;
+	text-shadow: 1px 1px black;
+	font-size: 10vw;
+	position: absolute;
+	bottom: 10vw;
+	right: 4vw;
+}
+.slider-controler a {
+	display: inline-block;
+	vertical-align: top;
+	text-decoration: none;
+	color: white;
+	font-size: 1.5rem;
+}
+
+@media only screen and (min-width: 1200px) {
+	.slide {
+		width: 1200px;
+	}
+
+	.caption {
+		font-size: 96px;
+		bottom: 96px;
+		right: 50px;
+	}
+}
+
+    </style>
+</head>
+<body>
+    <div id="menuses">
+            <li><a href="index.html">Inicio</a></li><br>
+            <hr width="100%">
+    </div>
+        <header>
+            <img class="imagen" src="images/institu.png" alt="" width="100%">
+        </header>
+        <h1>Matriculas abiertas 2023</h1>
+        <main>
+            <section>
+                <h2 class="titulo">Requisitos</h2>
+                <div class="contenedor-sobre-nosotros">
+                    <div class="image-about-us">
+                <img src="images/main section.jpg" width="529px" height="305">
+                  </div>
+                <div class="contenido-textos">
+                    <h3><span>1</span>Partida de nacimiento</h3>
+                    <p>-1 folder normal tamaño carta</p>
+                    <h3><span>2</span>Boleta de notas</h3>
+                    <p>-Notas hasta el segundo trimestre del presente año</p>
+                    <h3><span>3</span>Fechas</h3>
+                    <p>-Inicia fecha de entrega de documentos para nuevo ingreso: 
+                       <br> del 29 y 30 de noviembre del 2022</p>
+                </div>
+            </div>
+            </section>
+        </main>
+        <hr>
+        <div class="wrapper">
+            <div class="slider" id="slider">
+              <ul class="slides">
+                <li class="slide" id="slide1">
+                    <img src="images/foto1.jpg" alt="photo 1">
+                  
+                </li>
+                <li class="slide" id="slide2">
+                    <img src="images/pre.jpg" alt="photo 2">
+                  
+                </li>
+                <li class="slide" id="slide3">
+                    <img src="images/matricula1.jpg" alt="photo 3">
+                  
+                </li>
+              </ul>
+              <ul class="slider-controler">
+                <li><a href="#slide1">&bullet;</a></li>
+                <li><a href="#slide2">&bullet;</a></li>
+                <li><a href="#slide3">&bullet;</a></li>
+              </ul>
+            </div>
+          </div>
+</body>
+</html>
